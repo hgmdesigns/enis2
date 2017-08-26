@@ -5,10 +5,10 @@ import {
 } from 'react-native';
 import { AgendaView } from 'react-native-calendars';
 
-export default class Calender extends React.Component{
+class Calender extends React.Component{
   render(){
     return(
-          <Agenda
+          <AgendaView
           // the list of items that have to be displayed in agenda. If you want to render item as empty date
           // the value of date key kas to be an empty array []. If there exists no value for date key it is
           // considered that the date in question is not yet loaded
@@ -56,3 +56,5 @@ export default class Calender extends React.Component{
     )
   }
 }
+
+export default Calender;
